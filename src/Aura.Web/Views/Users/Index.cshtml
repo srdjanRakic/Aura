@@ -1,0 +1,13 @@
+﻿@{
+            ViewData["Title"] = "Users";
+}
+@model IEnumerable<Aura.Core.Models.UserDto>
+<h2>Users</h2>
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>
+            @item.Name<br/>@item.Email
+        </li>
+    }
+</ul>
